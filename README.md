@@ -67,10 +67,14 @@ A classe principal não precisa saber qual implementação será criada, deixand
 
 2. Abra o projeto em uma IDE Java ou no VS Code.
 
-3. Execute a classe:
+3. Compile o Java
 
 ```text
-Main.java
+javac -d bin src\Main.java src\factory\*.java src\model\*.java
+```
+4. Execute a Main
+```
+java -cp bin Main
 ```
 
 ## 🛠️ Tecnologias utilizadas
