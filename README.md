@@ -76,6 +76,46 @@ javac -d bin src\Main.java src\factory\*.java src\model\*.java
 ```
 java -cp bin Main
 ```
+## Diagrama de Classes
+
+```text
+                    <<interface>>
+                        Livro
+               +-------------------+
+               | +exibirDetalhes() |
+               +-------------------+
+                    ^      ^      ^
+                    |      |      |
+        ------------       |       ------------
+        |                  |                  |
++----------------+ +----------------+ +----------------+
+| LivroFisico    | | Ebook          | | Audiobook      |
++----------------+ +----------------+ +----------------+
+|                | |                | |                |
++----------------+ +----------------+ +----------------+
+| +exibirDetalhes() | +exibirDetalhes() | +exibirDetalhes() |
++----------------+ +----------------+ +----------------+
+
+                +----------------------+
+                |     LivroFactory     |
+                +----------------------+
+                | +criarLivro(tipo)    |
+                +----------------------+
+                          |
+                          | cria
+                          v
+                        Livro
+
+                +----------------------+
+                |        Main          |
+                +----------------------+
+                | +main(args)          |
+                +----------------------+
+                          |
+                          | usa
+                          v
+                    LivroFactory
+```
 
 ## 🛠️ Tecnologias utilizadas
 
