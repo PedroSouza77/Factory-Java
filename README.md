@@ -139,4 +139,4 @@ Projeto criado para praticar o uso do **Factory Pattern** e entender como aplica
 
 ---
 
-Desenvolvido por Pedro Benevides Souza, Everton Rodrigues, Rafael Gonçalves e Dhiogo Lima para estudos de Design Patterns em Java 🚀
+Código e Slides Desenvolvido por Pedro Benevides Souza, Everton Rodrigues, Rafael Gonçalves e Dhiogo Lima para estudos de Design Patterns em Java 🚀
