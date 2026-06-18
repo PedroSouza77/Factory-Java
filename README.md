@@ -112,6 +112,8 @@ java -cp bin Main
                        
 ```
 
+![alt text](image.png)
+
 ## 🛠️ Tecnologias utilizadas
 
 <div align="center">
