@@ -1,0 +1,39 @@
+@startuml
+
+skinparam classAttributeIconSize 0
+
+interface Livro {
+    +exibirDetalhes()
+}
+
+class LivroFisico {
+    +exibirDetalhes()
+}
+
+class Ebook {
+    +exibirDetalhes()
+}
+
+class Audiobook {
+    +exibirDetalhes()
+}
+
+Livro <|.. LivroFisico
+Livro <|.. Ebook
+Livro <|.. Audiobook
+
+
+class LivroFactory {
+    +criarLivro(tipo) : Livro
+}
+
+LivroFactory --> Livro : cria
+
+
+class Main {
+    +main(args)
+}
+
+Main --> LivroFactory : usa
+
+@enduml
